@@ -7,20 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <title>Tea Blog - view post</title>
+    <title>Tea Blog - Log in</title>
 </head>
 <body>
 <div class="container">
-    <%- include('partials/menu.ejs'); -%>
-    <div class="post">
-        <span class="post-title"><%= post.title %></span>
-        <br/>
-        <span class="post-date"><%= post.createdAt.toISOString().substring(0, 10); %></span>
-        <br/>
-        <span class="post-content"><%= post.desc %></span>
-    </div>
+    <%- include('partials/menu'); -%>
+    <form action="/login" method="post" class="auth-form">
+        <h1>Log in</h1>
+        <input type="text" placeholder="Username" name="username" autocomplete="off">
+        <input type="password" placeholder="Password" name="password">
+        <input type="submit" value="Log in">
+    </form>
     <div class="footer">Tea Blog &copy 2022</div>
 </div>
 </body>
