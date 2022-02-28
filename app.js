@@ -3,6 +3,8 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const ejs = require("ejs");
+const authRoutes = require('./routes/authRoutes');
+
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -62,7 +64,7 @@ app.get('/', async (req, res) => {
 });
 
 app.get('/create', (req, res) => {
-    res.sendFile(path.join(__dirname, "create.html"));
+    res.render('create.ejs');
 });
 
 app.get('/viewPost/:postID', async (req, res) => {
@@ -95,6 +97,8 @@ app.post('/deletePost', async (req, res) => {
         res.send('Error deleting post <a href="/">Home page</a>');
     });
 });
+
+app.use(authRoutes);
 
 app.use((req, res, next) => {
     res.status(404).send('Page not found');
