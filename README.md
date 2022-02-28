@@ -1,2 +1,2 @@
 # blog
-A simple blog
+A simple blog about tea
