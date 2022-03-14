@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Tea Blog - view post</title>
+</head>
+<body>
+<div class="container">
+    <%- include('partials/menu.ejs'); -%>
+    <div class="post">
+        <span class="post-title"><%= post.title %></span>
+        <br/>
+        <span class="post-date"><%= post.createdAt.toISOString().substring(0, 10); %></span>
+        <br/>
+        <span class="post-content"><%= post.desc %></span>
+    </div>
+    <div class="footer">Tea Blog &copy 2022</div>
+</div>
+</body>
+</html>
