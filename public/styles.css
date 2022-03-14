@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.short-desc{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    margin-bottom: 50px;
+}
+
+.menu > ul{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 13px;
+    display: flex;
+}
+
+.menu > ul li{
+    display: inline-block;
+    margin-right: 40px;
+    color: antiquewhite;
+}
+
+.menu > ul li > a{
+    color:antiquewhite;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu > ul li > a:hover{
+    background-color:darkorange;
+}
+
+.blogs{
+    text-align: center;
+}
+
+.title{
+    font-size: 24px;
+}
+
+.title > a{
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+}
+
+.blog{
+    margin-bottom: 75px;
+}
+
+.footer{
+    background-color: #333;
+    text-align: center;
+    color: antiquewhite;
+    padding: 5px 0;
+}
+
+.delete-post-btn{
+    background-color: crimson;
+    color:antiquewhite;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.delete-post-btn:hover{
+    cursor: pointer;
+    background-color:#333;
+    border: 1px solid #333;
+}
+
+.menu-li-sign:hover{
+    background-color:limegreen !important;
+}
+
+.auth-form{
+    text-align: center;
+    margin-bottom: 50px;
+    background-color:mintcream;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+}
+
+.auth-form > h1{
+    color:dimgray;
+}
+
+.auth-form > input{
+    width: 80%;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.form-btn{
+    width: 80%;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    background-color: darkorange;
+    color: antiquewhite;
+}
+
+.form-btn:hover{
+    cursor: pointer;
+}
+
+.error{
+    color:crimson;
+    margin-bottom: 20px;
+}
+
+.menu-right{
+    margin-left: auto;
+}
