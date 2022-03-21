@@ -29,21 +29,23 @@ body{
     list-style-type: none;
     margin: 0;
     padding-top: 13px;
+    display: flex;
 }
 
-.menu > ul > li{
+.menu > ul li{
     display: inline-block;
     margin-right: 40px;
+    color: antiquewhite;
 }
 
-.menu > ul > li > a{
+.menu > ul li > a{
     color:antiquewhite;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
 }
 
-.menu > ul > li > a:hover{
+.menu > ul li > a:hover{
     background-color:darkorange;
 }
 
@@ -120,12 +122,29 @@ body{
     padding: 5px;
 }
 
-.auth-form > input[type=submit]{
+.form-btn{
+    width: 80%;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0;
     font-size: 16px;
     background-color: darkorange;
     color: antiquewhite;
 }
 
-.auth-form > input[type=submit]:hover{
+.form-btn:hover{
     cursor: pointer;
+}
+
+.error{
+    color:crimson;
+    margin-bottom: 20px;
+}
+
+.menu-right{
+    margin-left: auto;
 }

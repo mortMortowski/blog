@@ -2,7 +2,14 @@
     <ul>
         <li><a href="/">Tea Blog</a></li>
         <li><a href="/create">Create a blog</a></li>
-        <li><a href="/login">Log in</a></li>
-        <li><a href="/signup" class="menu-li-sign">Sign up</a></li>
+        <span class="menu-right">
+        <% if (user) { %>
+        <li>Welcome, <%= user.username %></li>
+        <li><a href="/logout">Log Out</a></li>
+        <% } else { %>
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/signup" class="menu-li-sign">Sign Up</a></li>
+        <% } %>
+        </span>
     </ul>
 </div>
